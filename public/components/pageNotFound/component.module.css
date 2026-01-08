@@ -1,0 +1,28 @@
+.container {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.container p {
+    font-size: 2.5rem;
+}
+
+.container button {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 10rem;
+    background-color: var(--accent1);
+    border: solid 2px var(--highlight);
+    color: var(--font-color);
+    font-family: 'Lalezar';
+    border-radius: 2rem;
+}
+
+.container button:focus {
+    outline: solid 2px var(--highlight);
+}
+
+.container button:hover {
+    outline: solid 2px var(--highlight);
+}
