@@ -1,4 +1,4 @@
-export default function Events() {
+export default function timeDisplay() {
     const timeContainer = document.getElementById('time-container');
     
     if (window.__dateTimeInterval) {

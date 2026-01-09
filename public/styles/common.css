@@ -38,3 +38,8 @@ section {
 section ul {
     list-style-position: inside;
 }
+
+.active {
+    background-color: var(--highlight);
+    color: var(--background-color);
+}

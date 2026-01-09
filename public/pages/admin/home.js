@@ -1,10 +1,12 @@
 import Layout from '../../layouts/default.js';
 import Header from '../../components/home/header.js';
-import Main from '../../components/home/user/main.js';
+import Main from '../../components/home/admin/main.js';
 import Footer from '../../components/landing/footer.js';
-import timeDisplay from '../../utils/timeDisplay.js';
+import Events from '../../components/home/admin/events.js';
+import timeDisplay from '../../utils/timeDisplay.js'
 
-export default class UserHome {
+
+export default class AdminHome {
     constructor(root) {
         this.root = root;
     }
@@ -15,6 +17,7 @@ export default class UserHome {
         Header(header);
         Main(main);
         Footer(footer);
+        Events();
         timeDisplay();
     }
 }

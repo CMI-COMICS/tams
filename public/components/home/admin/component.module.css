@@ -1,0 +1,114 @@
+.main {
+    min-height: 50vh;
+    display: flex;
+}
+
+.side-header {
+    border-right: solid 1px var(--highlight);
+    width: 20vw;
+}
+
+.side-header ul{
+    list-style: none;
+}
+
+.side-header ul li {
+    padding: 2.5rem;
+    font-size: 2rem;
+    border-bottom: solid 1px var(--highlight);
+}
+
+.side-header ul li:hover {
+    background-color: var(--highlight);
+    color: var(--background-color);
+}
+
+.right-content {
+    width: 80vw;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-content select {
+    font-size: 1.5rem;
+    color: var(--font-color);
+    font-family: 'Lalezar';
+    padding: 0 1rem;
+    background-color: var(--accent2);
+    border-radius: .5rem;
+    border: solid 2px var(--highlight);
+}
+
+.right-content select:focus, .right-content select:hover {
+    outline: solid 2px var(--highlight);
+}
+
+.home-card {
+    background-color: var(--accent1);
+    width: 17vw;
+    height: 10vw;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.title-filter {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.yrlvl-filter {
+    width: 7rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+}
+
+.total-count {
+    font-size: 2rem;
+}
+
+.total-count span {
+    font-size: 4rem;
+}
+
+.sections {
+    display: flex;
+}
+
+.event, .quick-actions {
+    background-color: var(--accent1);
+    height: 5vw;
+    width: 17vw;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 1rem;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.event p {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.event select {
+    width: 10rem;
+    height: 2rem;
+}
+
+.quick-actions {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    cursor: pointer;
+}
