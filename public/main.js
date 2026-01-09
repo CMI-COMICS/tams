@@ -3,7 +3,8 @@ import SPA from './core/spa.js';
 // Note: Import Pages Here
 import PageNotFound from './pages/pageNotFound.js';
 import Landing from './pages/landing.js';
-import Login from './pages/login.js';
+import AdminLogin from './pages/admin/login.js';
+import UserLogin from './pages/user/login.js';
 
 import './styles/common.css';
 
@@ -16,5 +17,6 @@ window.app = app;
 
 // Note: Implement Pages Here!
 app.add('/', Landing);
-app.add('/login/', Login);
+app.add('/login/', UserLogin)
+app.add('/login/admin', AdminLogin);
 app.handleRouteChanges();
