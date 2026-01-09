@@ -6,10 +6,23 @@ class SPA {
         root: config?.root || document.getElementById('app'),
       };
   
+      // this.defaultRoute = {
+      //   key: '*',
+      //   callback: (config?.defaultRoute || (() => { })).bind(this.context),
+      // };
+
       this.defaultRoute = {
         key: '*',
-        callback: (config?.defaultRoute || (() => { })).bind(this.context),
-      };
+        callback: (params) => {
+          const Page = config?.defaultRoute;
+          if (!Page) return;
+
+          const page = new Page(this.context.root);
+          if (typeof page.render === 'function') {
+            page.render(params);
+          }
+        }
+      }
     }
 
     userAuthenticated() {
@@ -22,7 +35,12 @@ class SPA {
             this.pushRoute('/')
             return;
         }
-        cb.call(this.context, params);
+
+        const page = new cb(this.context.root);
+        if (typeof page.render === "function") {
+          page.render(params)
+        }
+        //cb.call(this.context, params);
     };
       this.routes.push({
         key: path,
