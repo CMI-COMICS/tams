@@ -5,6 +5,7 @@ import PageNotFound from './pages/pageNotFound.js';
 import Landing from './pages/landing.js';
 import AdminLogin from './pages/admin/login.js';
 import UserLogin from './pages/user/login.js';
+import UserHome from './pages/user/home.js';
 
 import './styles/common.css';
 
@@ -19,4 +20,6 @@ window.app = app;
 app.add('/', Landing);
 app.add('/login/', UserLogin)
 app.add('/login/admin', AdminLogin);
+app.add('/user/', UserHome);
+
 app.handleRouteChanges();
