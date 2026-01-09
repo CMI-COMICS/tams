@@ -1,0 +1,100 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.card {
+    width: 100%;
+    max-width: 45rem;
+    min-height: 60rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    background-color: var(--accent1);
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 32rem;
+}
+
+.input-fields label {
+    margin-top: 1.2rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.input-fields input {
+    width: 100%;
+    height: 4.8rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: solid 2px rgba(255, 255, 255, 0.3);
+    border-radius: 0.8rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    padding: 0 1.5rem;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+.input-fields input:focus {
+    outline: none;
+    border-color: var(--highlight);
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.3);
+}
+
+.input-fields input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+    font-family: 'Lalezar';
+}
+
+.title {
+    font-size: 2.8rem;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.desc {
+    font-size: 2rem;
+    margin: 1.5rem 0 2.5rem;
+    text-align: center;
+}
+
+.button-submit-cred {
+    width: 100%;
+    max-width: 24rem;
+    height: 4.8rem;
+    border-radius: 3.4rem;
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: var(--highlight);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    color: var(--accent1);
+    font-family: 'Lalezar';
+}
+
+.button-submit-cred:hover, 
+.button-submit-cred:focus {
+    background-color: var(--font-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.button-submit-cred:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
