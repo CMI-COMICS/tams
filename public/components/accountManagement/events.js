@@ -1,4 +1,4 @@
-import styles from './component.module.css';
+import styles from '../home/admin/component.module.css';
 
 export default function Events() {
     const sideHeaderBtns = document.querySelectorAll(`.${styles['side-header']} li`);

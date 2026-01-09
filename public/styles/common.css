@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    /* border: solid 1px red; */
 }
 
 :root {
@@ -42,4 +43,8 @@ section ul {
 .active {
     background-color: var(--highlight);
     color: var(--background-color);
+}
+
+main {
+    min-height: 70vh !important;
 }

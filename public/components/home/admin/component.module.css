@@ -4,6 +4,7 @@
 }
 
 .side-header {
+    height: 100vh;
     border-right: solid 1px var(--highlight);
     width: 20vw;
 }
@@ -13,7 +14,7 @@
 }
 
 .side-header ul li {
-    padding: 2.5rem;
+    padding: 2rem;
     font-size: 2rem;
     border-bottom: solid 1px var(--highlight);
 }
