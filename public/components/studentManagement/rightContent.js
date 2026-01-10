@@ -32,6 +32,7 @@ export default function rightContent() {
                     <p>Year Level</p>
                     <p>Course</p>
                     <p>School Year</p>
+                    <p>Action</p>
                 </div>
                 <div class="${styles['table-body']}" id="table-body">
                     <p>22-1284</p>
@@ -39,6 +40,7 @@ export default function rightContent() {
                     <p>4</p>
                     <p>BSCS</p>
                     <p>2025-2026</p>
+                    <p>View</p>
                 </div>
                 <div class="${styles['table-body']}" id="table-body">
                     <p>22-1234</p>
@@ -46,6 +48,7 @@ export default function rightContent() {
                     <p>4</p>
                     <p>BSCS</p>
                     <p>2025-2026</p>
+                    <p>View</p>
                 </div>
             </div>
         </div>
