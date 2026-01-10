@@ -17,6 +17,7 @@
     padding: 2rem;
     font-size: 2rem;
     border-bottom: solid 1px var(--highlight);
+    cursor: pointer;
 }
 
 .side-header ul li:hover {

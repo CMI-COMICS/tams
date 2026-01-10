@@ -3,6 +3,9 @@ import styles from './component.module.css';
 export default function rightContent() {
     const rightContent = `
         <div class="${styles['right-content']}">
+            <div class="${styles['button-section']}">
+                <button id="import-students">Print Report</button>
+            </div>
             <div class="${styles['sections']}">
                 <div class="${styles['event']}">
                     <p>Filters</p>

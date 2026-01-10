@@ -109,3 +109,25 @@
 .table-head p, .table-body p {
     width: 10rem;
 }
+
+.button-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.button-section button {
+    padding: 1rem;
+    margin-left: 0.5rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: solid 2px var(--highlight);
+    color: var(--font-color);
+    font-family: 'Lalezar';
+    font-size: 1.5rem;
+}
+
+.button-section button:focus, .button-section button:hover {
+    outline: solid 2px var(--highlight);
+}
