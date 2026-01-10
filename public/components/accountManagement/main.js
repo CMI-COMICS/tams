@@ -5,6 +5,7 @@ import sideHeader from "../home/admin/sideHeader";
 export default function Main(root) {
     root.innerHTML = `
         ${sideHeader()}
+        ${rightContent()}
     `;
 
     root.className = styles['main'];
