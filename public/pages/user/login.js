@@ -1,5 +1,6 @@
 import MainOnlyLayout from "../../layouts/mainOnly";
 import Main from '../../components/login/user/main';
+import Events from "../../components/login/event";
 
 export default class UserLogin {
     constructor(root) {
@@ -10,5 +11,6 @@ export default class UserLogin {
         const { main } = MainOnlyLayout(this.root);
         
         Main(main);
+        Events();
     }
 }

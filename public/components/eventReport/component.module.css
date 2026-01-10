@@ -119,7 +119,7 @@
 .button-section button {
     padding: 1rem;
     margin-left: 0.5rem;
-    width: 10rem;
+    width: 15rem;
     border-radius: 0.5rem;
     background-color: transparent;
     border: solid 2px var(--highlight);

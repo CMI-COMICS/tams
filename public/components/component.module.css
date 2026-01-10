@@ -1,0 +1,74 @@
+/* Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal box */
+.modal-content {
+  background-color: var(--accent2);
+  margin: 10% auto;
+  padding: 2rem;
+  width: 30rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Close button */
+.close {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.span {
+    text-align: right;
+}
+
+.modal-content h1 {
+    font-size: 2rem;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-container label {
+    font-size: 2rem;
+    height: 2.5rem;
+}
+
+.filter-container select {
+    width: 18rem;
+    height: 2.3rem;
+    font-size: 1.5rem;
+    color: var(--font-color);
+    font-family: 'Lalezar';
+    padding: 0 1rem;
+    background-color: var(--accent2);
+    border-radius: .5rem;
+    border: solid 2px var(--highlight);
+}
+
+.filter-container select:focus, .filter-container select:hover {
+    outline: solid 2px var(--highlight);
+}
+
+.modal-content button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: solid 2px var(--highlight);
+    color: var(--font-color);
+    font-family: 'Lalezar';
+    font-size: 1.5rem;
+}

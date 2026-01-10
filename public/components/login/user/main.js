@@ -8,9 +8,9 @@ export default function Main(root) {
 
             <div class="${styles["input-fields"]}">
                 <label for="username">Username</label>
-                <input type="text" name="username" placeholder="Name">
+                <input id="username-login" type="text" name="username" placeholder="Name">
                 <label for="password">Password</label>
-                <input type="password" name="password" placeholder="Password">
+                <input id="password-login" type="password" name="password" placeholder="Password">
             </div>
             <button id="submit-login" class="${styles["button-submit-cred"]}">Log In</button>
         </div>

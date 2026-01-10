@@ -10,4 +10,14 @@ export default function Events() {
             window.app.pushRoute(route);
         })
     })
+
+    const exportBtn = document.getElementById('export-report');
+    const closeModal = document.getElementById('closeModal');
+    const modal = document.getElementById('modal');
+    exportBtn.addEventListener('click', function() {
+        modal.style.display = "block";
+    })
+    closeModal.addEventListener('click', function() {
+        modal.style.display = "none";
+    })
 }

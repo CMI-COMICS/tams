@@ -4,7 +4,7 @@ export default function rightContent() {
     const rightContent = `
         <div class="${styles['right-content']}">
             <div class="${styles['button-section']}">
-                <button id="import-students">Print Report</button>
+                <button id="export-report">Export Report</button>
             </div>
             <div class="${styles['sections']}">
                 <div class="${styles['event']}">

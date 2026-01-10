@@ -12,7 +12,7 @@ const app = express();
 const PORT = process.env.API_PORT || 4000;
 
 app.use(morgan('combined'));
-app.use(cookieParser);
+app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
