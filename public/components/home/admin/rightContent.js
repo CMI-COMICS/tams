@@ -37,18 +37,18 @@ export default function rightContent() {
                 </div>
             </div>
             <div class="${styles['sections']}">
-                <div class="${styles['quick-actions']}">
+                <div class="${styles['quick-actions']} action-buttons" data-path="/admin/student">
                     <p>Import Students</p>
                 </div>
-                <div class="${styles['quick-actions']}">
+                <div class="${styles['quick-actions']} action-buttons" data-path="/admin/report">
                     <p>Print Report</p>
                 </div>
-                <div class="${styles['quick-actions']}">
+                <div class="${styles['quick-actions']} action-buttons" data-path="/admin/event">
                     <p>Create Event</p>
                 </div>
             </div>
             <div class="${styles['sections']}">
-                <div class="${styles['quick-actions']}">
+                <div class="${styles['quick-actions']}" id="logout-btn">
                     <p>Log Out</p>
                 </div>
             </div>

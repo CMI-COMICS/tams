@@ -20,14 +20,39 @@ export default function Modal(page) {
                     </div>
                     <button>Export</button>
                 </div>
-            </di>
+            </div>
         `;
-    } else if (page === 'stuent') {
+    } else if (page === 'student') {
         return `
-        
+            <div class="${styles['modal']}" id="modal">
+                <div class="${styles['modal-content']}">
+                    <p class="${styles['span']}"><span class="${styles['close']}" id="closeModal">&times;</span></p>
+                    <h1>Import Students</h1>
+                    <div class="${styles['filter-container']}">
+                        <label for="fileInput">Choose a file:</label>
+                        <input type="file" id="fileInput" name="file">
+                        <button type="submit" id="upload-btn">Upload</button>
+                    </div>
+                </div>
+            </div>
         `;
     } else if (page === 'event') {
         return `
+            <div class="${styles['modal']}" id="modal">
+                <div class="${styles['modal-content']}">
+                    <p class="${styles['span']}"><span class="${styles['close']}" id="closeModal">&times;</span></p>
+                    <h1>Create Event</h1>
+                    <div id="input-fields" class="${styles['input-fields']}">
+                        <label for="name">Event Name</label>
+                        <input type="text" id="event-name" placeholder="Enter Event Name">
+                        <label for="name">Event Date</label>
+                        <input type="date" id="date">
+                        <div class="${styles['buttons']}">
+                            <button id="create-btn">Create</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         `;
     } else if (page === 'account') {
         return `

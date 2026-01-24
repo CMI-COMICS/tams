@@ -4,7 +4,6 @@ import checkRole from "../../utils/checkRole.js";
 
 export default function Events() {
     const loginBtn = document.getElementById('submit-login');
-    console.log(loginBtn)
     if (localStorage.getItem('token')) {
         const isExpired = checkExpiration(localStorage.getItem('token'));
         if (isExpired) {
@@ -35,9 +34,7 @@ export default function Events() {
                         "apikey": "tams"
                     }
                 });
-                console.log("fetch token from response",response.data.data.token)
                 const token = response.data.data.token;
-                console.log(token)
                 localStorage.setItem('token', token);
                 const role = checkRole(token);
                 if (role === 'staff'){

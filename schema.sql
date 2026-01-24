@@ -23,15 +23,15 @@ CREATE TABLE `students`(
     `last_name` VARCHAR(50) NOT NULL,
     `first_name` VARCHAR(100) NOT NULL,
     `middle_name` VARCHAR(50) NULL,
-    `gender` ENUM('male', 'female') NOT NULL,
+    `gender` ENUM('M', 'F') NOT NULL,
     `course` ENUM('BSCS', 'ACT') NOT NULL,
-    `year_level` ENUM('1', '2', '3', '4') NOT NULL,
+    `level` ENUM('1', '2', '3', '4') NOT NULL,
     `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE `events`(
-    `id` VARCHAR(50) NOT NULL PRIMARY KEY,
+    `id` BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     `name` VARCHAR(100) NOT NULL,
     `date` DATETIME NOT NULL,
     `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -40,7 +40,7 @@ CREATE TABLE `events`(
 
 CREATE TABLE `attendance`(
     `id` BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    `event_id` VARCHAR(50) NOT NULL,
+    `event_id` BIGINT NOT NULL,
     `student_id` VARCHAR(10) NOT NULL,
     FOREIGN KEY (`event_id`) REFERENCES `events`(`id`) ON DELETE CASCADE,
     FOREIGN KEY (`student_id`) REFERENCES `students`(`id`) ON DELETE CASCADE
