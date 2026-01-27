@@ -9,9 +9,9 @@ class Student {
         INTO TABLE students
         FIELDS TERMINATED BY ','
         ENCLOSED BY '"'
-        LINES TERMINATED BY '\\n'
+        LINES TERMINATED BY '\r\n'
         IGNORE 1 ROWS
-        (id, last_name, first_name, middle_name, gender, course, level)
+        (id, last_name, first_name, middle_name, gender, course, level, payment_status)
       `;
 
       const [result] = await connection.query(

@@ -26,6 +26,7 @@ CREATE TABLE `students`(
     `gender` ENUM('M', 'F') NOT NULL,
     `course` ENUM('BSCS', 'ACT') NOT NULL,
     `level` ENUM('1', '2', '3', '4') NOT NULL,
+    `payment_status` ENUM('paid', 'unpaid') DEFAULT NULL,
     `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -42,6 +43,8 @@ CREATE TABLE `attendance`(
     `id` BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     `event_id` BIGINT NOT NULL,
     `student_id` VARCHAR(10) NOT NULL,
+    `time_in` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    `time_out` TIMESTAMP DEFAULT NULL, 
     FOREIGN KEY (`event_id`) REFERENCES `events`(`id`) ON DELETE CASCADE,
     FOREIGN KEY (`student_id`) REFERENCES `students`(`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

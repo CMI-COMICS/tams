@@ -18,7 +18,6 @@ export default function Main(root) {
                     <label for="id">Student ID</label>
                     <input name="id" id="stud-id" placeholder="Enter Student ID">
                     <div class="${styles['buttons']}">
-                        <button id="logout-btn">Logout</button>
                         <button id="submit-btn">Submit</button>
                     </div>
                 </div>

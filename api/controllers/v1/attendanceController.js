@@ -8,7 +8,23 @@ class AttendaceController {
     async create(req, res) {
         try {
             const { studentId, eventId } = req.body || {};
-            const reponse = await this.attendance.create(studentId, eventId);
+            const response = await this.attendance.create(studentId, eventId);
+            res.json({
+                success: true,
+                response
+            })
+        } catch(err) {
+            res.json({
+                success: false,
+                message: err.toString(),
+            });
+            res.end();
+        }
+    }
+
+    async get(req, res) {
+        try { 
+
         } catch(err) {
             res.json({
                 success: false,

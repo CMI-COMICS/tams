@@ -36,4 +36,30 @@ export default async function PageEvent() {
 
         selectEvent.appendChild(option);
     });
+
+    const submitBtn = document.getElementById('submit-btn');
+    submitBtn.addEventListener('click', async function() {
+        const studentId = document.getElementById("stud-id")
+        const response = await axios.post(
+            `http://${import.meta.env.VITE_API_HOST}:${import.meta.env.VITE_API_PORT}/v1/attendance/`,
+            {
+                "studentId": studentId.value,
+                "eventId": document.getElementById("event-dropdown").value
+            },
+            {
+                headers: {
+                    "Content-Type": "application/json",
+                    "apikey": import.meta.env.VITE_API_KEY,
+                    "token": localStorage.getItem('token')
+                }
+            }
+        );
+
+        studentId.value = "";
+        if (response.data.response === "Timed Out") {
+            window.alert("Student already time out for this event")
+        } else if (response.data.response = "Payment Missing") {
+            window.alert("Student has not made any payment. Don't give any raffle tickets, souvenir and stickers")
+        }
+    })
 }

@@ -14,7 +14,10 @@ export default function Header(root) {
                 <p>CMI Computer Science Society</p>
             </div>
         </div>
-        <h1 id="time-container" class="${styles['time-container']}"></h1>
+        <div class="${styles['time-btn-container']}">
+            <h1 id="time-container" class="${styles['time-container']}"></h1>
+            <button id="logout-btn">Logout</button>
+        </div>
     `;
 
     root.className = styles['header'];
