@@ -1,0 +1,105 @@
+.main {
+    display: flex;
+}
+
+.right-content {
+    width: 80vw;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.head-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--accent1);
+    height: 5vw;
+    border-radius: 1rem;
+    padding: 0 2rem;
+}
+
+.button-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.button-section button {
+    padding: 1rem;
+    margin-left: 0.5rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: solid 2px var(--highlight);
+    color: var(--font-color);
+    font-family: 'Lalezar';
+    font-size: 1.5rem;
+}
+
+.button-section button:focus, .button-section button:hover {
+    outline: solid 2px var(--highlight);
+}
+
+.filter-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-container label {
+    font-size: 1rem;
+    height: 1.2rem;
+}
+
+.filter-container input {
+    width: 18rem;
+    height: 2.3rem;
+    font-size: 1.5rem;
+    color: var(--font-color);
+    font-family: 'Lalezar';
+    padding: 0 1rem;
+    background-color: var(--accent2);
+    border-radius: .5rem;
+    border: solid 2px var(--highlight);
+}
+
+.filter-container input:focus, .filter-container input:hover {
+    outline: solid 2px var(--highlight);
+
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: var(--accent1);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.table-body {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: var(--highlight);
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--background-color);
+}
+
+.table-head p, .table-body p {
+    width: 15rem;
+}

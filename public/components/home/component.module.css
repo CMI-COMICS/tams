@@ -1,0 +1,51 @@
+.header {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--highlight);
+    position: sticky;
+    top: 0;
+    background-color: var(--background-color);
+}
+
+.logo-txt-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 6rem;
+    height: 6rem;
+    margin-right: 1.5rem;
+}
+
+.txt-container p:nth-child(1) {
+    font-size: 4rem;
+    height: 3.5rem;
+}
+
+.txt-container p:nth-child(2) {
+    font-size: 2rem;
+}
+
+.time-container {
+    font-size: 2rem;
+}
+
+.time-btn-container {
+    text-align: right;
+}
+
+.time-btn-container button {
+    /* margin-top: 2rem;
+    margin-right: 1rem; */
+    width: 10rem;
+    padding: .5rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: solid 2px var(--highlight);
+    color: var(--font-color);
+    font-family: 'Lalezar';
+    font-size: 1.5rem;
+}

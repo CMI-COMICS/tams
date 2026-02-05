@@ -1,0 +1,123 @@
+.header {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--highlight);
+}
+
+.logo-txt-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 6rem;
+    height: 6rem;
+    margin-right: 1.5rem;
+}
+
+.txt-container p:nth-child(1) {
+    font-size: 4rem;
+    height: 3.5rem;
+}
+
+.txt-container p:nth-child(2) {
+    font-size: 2rem;
+}
+
+.btn-container button {
+    padding: 1rem;
+    margin-left: 0.5rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: solid 2px var(--highlight);
+    color: var(--font-color);
+    font-family: 'Lalezar';
+    font-size: 1.5rem;
+}
+
+.btn-container button:focus {
+    outline: solid 2px var(--highlight);
+}
+
+.btn-container button:hover {
+    outline: solid 2px var(--highlight);
+}
+
+.main {
+    min-height: 100vh;
+}
+
+.desc-container {
+    width: 50vw;
+    text-align: justify;
+}
+
+.title-section {
+    font-size: 5rem;
+}
+
+.desc-section {
+    font-size: 2.5rem;
+}
+
+.page-illustration {
+    width: 30rem;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.footer {
+    border-top: solid 1px var(--highlight);
+    background-color: var(--accent1);
+    display: flex;
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+.footer li{
+    height: 1.5rem;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.title {
+    font-size: 1.5rem;
+    height: 1.5rem;
+}
+
+.left-side {
+    margin-right: 10rem;
+}
+
+.center-side {
+    margin-right: 10rem;
+}
+
+.section-cotainer1 {
+    text-align: center;
+}
+
+.section-cotainer1 button {
+    padding: 1rem;
+    margin-left: 0.5rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: solid 2px var(--highlight);
+    color: var(--font-color);
+    font-family: 'Lalezar';
+    font-size: 1.5rem;
+}
+
+.section-cotainer1 button:focus {
+    outline: solid 2px var(--highlight);
+}
+
+.section-cotainer1 button:hover {
+    outline: solid 2px var(--highlight);
+}
